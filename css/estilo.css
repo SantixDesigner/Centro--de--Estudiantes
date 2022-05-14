@@ -12,6 +12,13 @@ body{
     font-weight: 600;
 
 }
+.navSubClass{
+    background-color: rgb(82, 82, 82);
+    z-index: 1000;
+}
+.div1nav{
+    background-color: rgb(82, 82, 82);
+}
 /* Header */
 .header{
     display:flex;
