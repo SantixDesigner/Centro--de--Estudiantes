@@ -14,7 +14,8 @@ body{
 }
 .navSubClass{
     background-color: rgb(82, 82, 82);
-    z-index: 1000;
+    display: flex;
+    display: none;
 }
 .div1nav{
     background-color: rgb(82, 82, 82);
@@ -31,6 +32,8 @@ body{
     top: 0;
     grid-area: header;
     opacity: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 .headerLogo{
     width:60px;
@@ -43,7 +46,8 @@ body{
 .ulNav{
     display: flex;
     margin-block: 1.3em;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: bold;
 }
 .listItemNav{
     list-style: none;
@@ -71,6 +75,7 @@ body{
 }
 .headerImagenesTitulos .headerTitulo{
     color: rgb(37, 37, 37);
+    font-weight: bold;
 }
 .headerImagenesTitulos .imagenesHeader{
     display: flex;
@@ -276,6 +281,7 @@ body{
     display: grid;
     grid-template-areas: 
     "header header header"
+    "nav nav nav"
     "main main main"
     "aside aside aside"
     "footer footer footer";
@@ -645,12 +651,17 @@ textarea:hover{
     "mainContactos mainContactos mainContactos"
     "footer footer footer";
 }
+.navSubClass{
+    grid-area: nav;
+}
+
 /* Index media querie */
 @media (min-width:0) and (max-width:420px){
     .gridPadreIndex{
         display: grid;
         grid-template-areas: 
         "header"
+        "nav"
         "main"
         "aside"
         "footer";
@@ -805,6 +816,10 @@ textarea:hover{
     }
 }
 /* props al header a todos */
+@media(min-width:301px) and (max-width:400px){
+    .header{
+        font-size: 11px;
+    }
 @media(min-width:200px) and (max-width:300px){
     .header{
         font-size: 12px;
@@ -821,10 +836,7 @@ textarea:hover{
         font-size: 8px;
     }
 }
-@media(min-width:301px) and (max-width:400px){
-    .header{
-        font-size: 14px;
-    }
+
 }
 /* Quienes Somos */
 @media(min-width:0px) and (max-width:710px){
@@ -956,5 +968,51 @@ textarea:hover{
     .formulario form div input {
         width: 100%;
         font-size: 8px;
+    }
+}
+/* NavBar */
+@media (min-width:0px) and (max-width:1200px){
+    .navSubClass{
+        display: flex;
+    }
+    .imagenesHeader a{
+        display: none;
+    }
+    .navSubClass div a img{
+        width: 20%;
+        max-width: 250px;
+    }
+    .navSubHeader{
+        display: none;
+    }
+    .botonHamburguesa{
+        margin-left: 5%
+    }
+}
+@media (min-width:1300px) and (max-width:1612px){
+    .ulNav{
+        font-size: 12px;
+    }
+    .headerTitulo{
+        font-size: 28px;
+    }
+}
+@media (min-width:1200px) and (max-width:1299px){
+    .ulNav{
+        font-size: 10px;
+    }
+    .headerTitulo{
+        font-size: 28px;
+    }
+}
+@media (min-width:0) and (max-width:1200px){
+    .gridPadreIndex{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
     }
 }
