@@ -598,6 +598,7 @@ body{
     background-color:#ff8c00;
     width: 40%;
     margin:auto;
+    text-align: center;
 }
 
 .instagramContactos div{
@@ -610,15 +611,15 @@ body{
     height: 50px;
 }
 .instagramContactos div a .instagram{
-    width: 100%;
+    width: 50%;
     height: 50px;
 }
 .instagramContactos div a .facebook{
-    width: 100%;
+    width: 50%;
     height: 50px;
 }
 .instagramContactos div a .whatsapp{
-    width: 100%;
+    width: 50%;
 }
 .instagramContactos div a{
     width: 20%;
