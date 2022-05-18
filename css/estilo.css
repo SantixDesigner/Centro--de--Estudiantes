@@ -103,13 +103,14 @@ body{
     display: grid;
     grid-template-areas: "lista--inferior lista--superior consejeros";
     justify-content: space-around;
+    text-align: center;
 }
 .listItemsSeccion{
     list-style: none;
     margin-left: 5px;
     font-size: 18px;
     font-weight: bolder;
-    margin-left: 20%;
+
 }
 .ulPrimeraSeccion{
     display: flex;
@@ -124,7 +125,7 @@ body{
     grid-area: lista--superior;
     border-radius: 20px;
     max-width: 90%;
-    margin:auto;
+    margin: auto;
 }
 .listaSuperior h2{
     border: 2px solid black;
@@ -132,7 +133,6 @@ body{
     font-size: 18px;
     border-radius: 20px;
     padding: 2px;
-    text-align: center;
 }
 .estrella{
     width: 15px;
@@ -150,7 +150,6 @@ body{
     font-size: 18px;
     border-radius: 20px;
     padding: 2px;
-    text-align: center;
 }
 .ulSegundaSeccion{
     display: flex;
@@ -175,7 +174,6 @@ body{
     border-radius: 20px;
     padding: 2px;
     font-size: 18px;
-    text-align: center;
 }
 .consejerosLista{
     display: flex;
@@ -188,13 +186,10 @@ body{
 .sectionTitle{
     display: flex;
     justify-content: center;
+    padding-top: 10px;
     border: 2px solid rgb(43, 0, 0);
     border-spacing: 2px;
     width: 20%;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
     margin:auto;
     height: 50px;
     grid-area: titulo;
@@ -678,10 +673,22 @@ textarea:hover{
     "mainContactos mainContactos mainContactos"
     "footer footer footer";
 }
+/* Clases bootstrap */
 .navSubClass{
     grid-area: nav;
 }
-
+.centrar-nav{
+    font-size: 25px;
+    text-align: center;
+    margin-left: 100%;
+}
+.centrar-nav li a{
+    color:white;
+    font-weight: bold;
+}
+.tamanio-img{
+    width: 50px;
+}
 /* Index media querie */
 @media (min-width:0) and (max-width:420px){
     .gridPadreIndex{
@@ -776,6 +783,9 @@ textarea:hover{
         text-align: center;
         font-size: 10px;
     }
+    .sectionTitle h2{
+        font-size: 20.1px;
+    }
     .listaInferior{
         width: 25%;
         text-align: center;
@@ -795,6 +805,14 @@ textarea:hover{
     .header{
         position: sticky;
         top:0px;
+    }
+}
+@media (min-width:769px) and (max-width:920px){
+    .sectionTitle h2{
+        font-size: 20px;
+    }
+    .sectionTitle{
+        width: 50%;
     }
 }
 /* ideas-nuevas media querie */
@@ -1014,21 +1032,15 @@ textarea:hover{
 }
 /* NavBar */
 @media (min-width:0px) and (max-width:1200px){
-    .navSubClass{
-        display: flex;
-    }
     .imagenesHeader a{
         display: none;
     }
-    .navSubClass div a img{
-        width: 20%;
-        max-width: 250px;
+    .navSubClass div span a img{
+        width: 95%;
+        height: 100%;
     }
     .navSubHeader{
         display: none;
-    }
-    .botonHamburguesa{
-        margin-left: 5%
     }
 }
 @media (min-width:1300px) and (max-width:1612px){
