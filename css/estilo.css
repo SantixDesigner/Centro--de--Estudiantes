@@ -190,7 +190,7 @@ body{
     border: 2px solid rgb(43, 0, 0);
     border-spacing: 2px;
     width: 20%;
-    margin:auto;
+    margin-left: 42.5%;
     height: 50px;
     grid-area: titulo;
     border-radius: 20px;
@@ -373,18 +373,14 @@ body{
 /* Proyectos */
 .mainProjects{
     grid-area: mainProject;
+    
 }
 .sectionProyectos{
-    margin: 2px;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin:auto;
     display: grid;
-    grid-template-areas: "ol1 ol1 ol2";
-    max-width: 90%;
-    padding: 0;
+    grid-template-areas: 
+    "ol1"
+    "ol2";
+    justify-content: center;
 }
 .sectionProyectosOl1{
     width: 80%;
@@ -456,18 +452,20 @@ body{
 }
 .mainLista{
     display: grid;
-    grid-template-areas: 
-    "miembrosLista seccionAbajo"
-    "ultimaSeccion ultimaSeccion";
+    grid-template-areas:
+    "seccionAbajo" 
+    "miembrosLista"
+    "ultimaSeccion";
     grid-area: mainLista;
 }
 .sectionLista{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    margin:auto;
     width: 39%;
     border: 1px solid black;
     grid-area: miembrosLista;
+    margin-bottom: 5px;
 }
 .tituloDeLaLista{
     background-color: rgb(1, 93, 160);
@@ -492,8 +490,7 @@ body{
     width: 25%;
     text-align: center;
     grid-area: seccionAbajo;
-    margin-bottom: auto;
-    margin-top: auto;
+    margin: auto;
 }
 .sectionListaAbajo h2{
     border: .5px solid black;
@@ -550,7 +547,7 @@ body{
 .nota1{
     display: flex;
     flex-flow: column wrap;
-    width: 35%;
+    width: 25%;
     top: 0;
     bottom: 0;
     right: 0;
@@ -560,15 +557,17 @@ body{
     background-color: #ff8c00;
     border: .2px solid black;
     grid-area: nota1;
+    font-weight: bold;
 }
 .nota1 h2{
     background-color: #ffe100;
     border-bottom: 0.2px solid black;
 }
 .nota2{
+    font-weight: bold;
     display: flex;
     flex-flow: column wrap;
-    width: 35%;
+    width: 25%;
     top: 0;
     bottom: 0;
     right: 0;
@@ -585,8 +584,9 @@ body{
 }
 .unicaSectionIdeas{
     display: grid;
-    grid-template-areas: "nota1 nota2"
-    "explicacion explicacion";
+    grid-template-areas: "nota1"
+    "nota2"
+    "explicacion";
     grid-area: mainIdeas;
 }
 
@@ -597,8 +597,7 @@ body{
     flex-direction: column;
     background-color:#ff8c00;
     width: 40%;
-    margin-left: auto;
-    margin-bottom: auto;
+    margin:auto;
 }
 
 .instagramContactos div{
@@ -629,7 +628,8 @@ body{
     flex-direction: column;
     background-color: #00e5ff;
     width: 51%;
-    margin-right: auto;
+    margin: auto;
+    text-align: center;
 }
 .formulario div{
     display: flex;
@@ -663,7 +663,8 @@ textarea:hover{
 .mainContactos{
     display: grid;
     grid-area: mainContactos;
-    grid-template-areas: "seccionredes formulario";
+    grid-template-areas: "seccionredes"
+    "formulario";
     row-gap: none;
 }
 .bodyContactos{
@@ -685,6 +686,14 @@ textarea:hover{
 .centrar-nav li a{
     color:white;
     font-weight: bold;
+    background-image: radial-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-size: 0% 0%, 2.5px;
+    transition:1s;
+}
+.centrar-nav li a:hover{
+    color:green;
+    background-size: 100% 2px;
 }
 .tamanio-img{
     width: 50px;
@@ -807,6 +816,11 @@ textarea:hover{
         top:0px;
     }
 }
+@media (min-width:0px) and (max-width:920px){
+    .sectionTitle{
+        margin: auto;
+    }
+}
 @media (min-width:769px) and (max-width:920px){
     .sectionTitle h2{
         font-size: 20px;
@@ -885,7 +899,7 @@ textarea:hover{
     }
 }
 /* Quienes Somos */
-@media(min-width:0px) and (max-width:710px){
+@media(min-width:0px) and (max-width:1000px){
     .sectionQS{
         grid-template-areas: "seccion1"
         "seccion2";
@@ -909,6 +923,14 @@ textarea:hover{
         "mainQS"
         "asideQS"
         "footer";
+    }
+}
+@media (min-width:1001px) and (max-width:1920px){
+    .sectionDiv1{
+        width: 75%;
+    }
+    .sectionDiv2{
+        width: 75%;
     }
 }
 /* Nuestra Lista media-querie */
