@@ -16,19 +16,19 @@ body{
 
 }
 .navSubClass{
-    background-color: rgb(82, 82, 82);
+    background-color: #f0c1dd;
     display: flex;
     display: none;
 }
 .div1nav{
-    background-color: rgb(82, 82, 82);
+    background-color: #f0c1dd;
 }
 /* Header */
 .header{
     display:flex;
     flex-flow: row wrap;
     width: 100%;
-    background-color: rgb(82, 82, 82);
+    background-color: #ff9f87;
     height: 60px;
     overflow:hidden;
     position: sticky;
@@ -117,11 +117,11 @@ body{
     flex-direction: column;
     margin-top: 2px;
     border: 2px solid rgb(18, 0, 0);
-    background-color: #ff8c00;
+    background-color: #b9aa04;
     border-radius: 20px;
 }
 .listaSuperior{
-    background-color: #00e5ff;
+    background-color: #e36b52;
     grid-area: lista--superior;
     border-radius: 20px;
     max-width: 90%;
@@ -138,7 +138,7 @@ body{
     width: 15px;
 }
 .listaInferior{
-    background-color: #00e5ff;
+    background-color: #e36b52;
     grid-area: lista--inferior;
     border-radius: 20px;
     max-width: 90%;
@@ -156,12 +156,12 @@ body{
     flex-direction: column;
     margin-top: 2px;
     border: 2px solid rgb(40, 0, 0);
-    background-color: #ff8c00;;
+    background-color: #b9aa04;
     border-radius: 20px;
     
 }
 .consejeros{
-    background-color: #00e5ff;
+    background-color: #e36b52;
     grid-area: consejeros;
     border-radius: 20px;
     max-width: 90%;
@@ -180,7 +180,7 @@ body{
     flex-direction: column;
     margin-top: 2px;
     border: 2px solid rgb(24, 0, 0);
-    background-color: #ff8c00;
+    background-color: #b9aa04;
     border-radius: 20px;
 }
 .sectionTitle{
@@ -239,7 +239,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: #844900;
+    background-color: #b9aa04;
     border-top: 1px solid black;
 }
 .listItemsSeccionDos{
@@ -265,7 +265,7 @@ body{
     max-width: 90%;
 }
 .pieDePagina{
-    background-color: #ff8c00;
+    background-color: #ff9f87;
     grid-area: footer;
     width: 100%;
     font-weight: bold;
@@ -311,7 +311,7 @@ body{
     "footer footer footer";
 }
 .sectionDiv1{
-    background-color: #844900;
+    background-color: #b9aa04;
     width: 40%;
     margin: auto;
     font-weight: bold;
@@ -319,12 +319,12 @@ body{
     grid-area: seccion1;
 }
 .sectionDiv1 h2{
-    background-color: #002963;
+    background-color: #af5a91;
     color: rgb(100, 100, 100);
     text-align: center;
 }
 .sectionDiv2{
-    background-color: #844900;
+    background-color: #af5a91;
     width: 40%;
     margin: auto;
     font-weight: bold;
@@ -332,7 +332,7 @@ body{
     grid-area: seccion2;
 }
 .sectionDiv2 h3{
-    background-color: #002963;
+    background-color: #b9aa04;
     color: rgb(100, 100, 100);
     text-align: center;
 }
@@ -345,7 +345,7 @@ body{
     grid-area: mainQS;
 }
 .asideDelQS{
-    background-color: #00515a;
+    background-color: #f872c2;
     width: 400px;
     max-width: 90%;
     top:0;
@@ -384,8 +384,8 @@ body{
 }
 .sectionProyectosOl1{
     width: 80%;
-    background-color: #00e5ff;
-    border: 2px solid rgb(177, 83, 0);
+    background-color: #048631;
+    border: 2px solid #7cb5bc;
     max-width: 500px;
     grid-area: ol1;
     font-size: large;
@@ -394,15 +394,15 @@ body{
 
 .sectionProyectosOl2{
     width: 80%;
-    background-color: #00e5ff;
-    border: 2px solid rgb(177, 83, 0);
+    background-color: #048631;
+    border: 2px solid #7cb5bc;
     max-width: 500px;
     grid-area: ol2;
     font-size: large;
     font-weight: bold;
 }
 .h2Section{
-    background-color: #ff8c00;
+    background-color: #7cb5bc;
 }
 .sectionProyectosOl1 .olItem{
     list-style: none;
@@ -419,15 +419,14 @@ body{
 .asideProyectos div{
     display: flex;
     flex-direction: column;
-    background-color: #00e5ff;
+    background-color: #048631;
     max-width: 230px;
 }
 .asideProyectos div h3{
-    background-color: #ff8c00;
+    background-color: #709976;
     margin-bottom:3px;
 }
 .asideProyectos div img{
-    background-color: #00e5ff;
     width: 95%;
     margin-left: 5px;
 }
@@ -468,7 +467,7 @@ body{
     margin-bottom: 5px;
 }
 .tituloDeLaLista{
-    background-color: rgb(1, 93, 160);
+    background-color: #b5f547;
     text-align: center;
 }
 .olSectionLista{
@@ -477,10 +476,10 @@ body{
 .miembrosLista{
     list-style: none;
     text-align: center;
-    background-color: #ff8c00;
+    background-color: #f6aa62;
 }
 #miembroPresidente{
-    background-color: #ffe100;
+    background-color: #22f1ee;
     border-bottom: .5px solid black;
     border-top: .5px solid black;
 }
@@ -504,7 +503,7 @@ body{
 .ultimaSeccionLista{
     display: flex;
     flex-direction: column;
-    background-color: #ce9e62;
+    background-color: #c7d1e1;
     width: 25%;
     grid-area: ultimaSeccion;
     margin:auto;
@@ -527,7 +526,7 @@ body{
 .explicacionPagina{
     display: flex;
     flex-flow: column wrap;
-    background-color: #00e5ff;
+    background-color: #f6aa62;
     width: 25%;
     margin: auto;
     top: 0;
@@ -539,7 +538,7 @@ body{
     grid-area: explicacion;
 }
 .explicacionPagina h2{
-    background-color: #ffe100;
+    background-color: #22f1ee;
     width: 100%;
     border-bottom: .3px solid black;
     text-align: center;
@@ -554,13 +553,13 @@ body{
     left: 0;
     margin:auto;
     margin-bottom: 100px;
-    background-color: #ff8c00;
+    background-color: #c7d1e1;
     border: .2px solid black;
     grid-area: nota1;
     font-weight: bold;
 }
 .nota1 h2{
-    background-color: #ffe100;
+    background-color: #22f1ee;
     border-bottom: 0.2px solid black;
 }
 .nota2{
@@ -574,12 +573,12 @@ body{
     left: 0;
     margin:auto;
     margin-bottom: 100px;
-    background-color: #ff8c00;
+    background-color: #c7d1e1;
     border: .2px solid black;
     grid-area: nota2;
 }
 .nota2 h2{
-    background-color: #ffe100;
+    background-color: #22f1ee;
     border-bottom: 0.2px solid black;
 }
 .unicaSectionIdeas{
@@ -595,7 +594,7 @@ body{
 .instagramContactos{
     display: flex;
     flex-direction: column;
-    background-color:#ff8c00;
+    background-color:#2a8dc4;
     width: 40%;
     margin:auto;
     text-align: center;
@@ -627,7 +626,7 @@ body{
 .formulario{
     display: flex;
     flex-direction: column;
-    background-color: #00e5ff;
+    background-color: #379c5f;
     width: 51%;
     margin: auto;
     text-align: center;
@@ -685,7 +684,7 @@ textarea:hover{
     margin-left: 100%;
 }
 .centrar-nav li a{
-    color:white;
+    color:#0a5ea3;
     font-weight: bold;
     background-image: radial-gradient(currentColor, currentColor);
     background-position: 50% 100%;
