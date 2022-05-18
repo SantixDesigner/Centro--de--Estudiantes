@@ -401,7 +401,8 @@ body{
     grid-area: ol2;
     font-size: large;
     font-weight: bold;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .h2Section{
     background-color: #7cb5bc;
