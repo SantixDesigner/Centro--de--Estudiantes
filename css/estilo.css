@@ -390,6 +390,7 @@ body{
     grid-area: ol1;
     font-size: large;
     font-weight: bold;
+    margin: auto;
 }
 
 .sectionProyectosOl2{
@@ -400,6 +401,7 @@ body{
     grid-area: ol2;
     font-size: large;
     font-weight: bold;
+    margin: auto;
 }
 .h2Section{
     background-color: #7cb5bc;
