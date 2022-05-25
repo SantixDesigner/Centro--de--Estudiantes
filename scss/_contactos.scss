@@ -1,0 +1,97 @@
+$colores10: #2a8dc4;
+/* Contactos */
+.instagramContactos {
+    display: flex;
+    flex-direction: column;
+    background-color: $colores10;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    grid-area: seccionredes;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+            width: 20%;
+
+            img {
+                width: 20%;
+                height: 50px;
+            }
+
+            .instagram {
+                width: 50%;
+                height: 50px;
+            }
+
+            .facebook {
+                width: 50%;
+                height: 50px;
+            }
+
+            .whatsapp {
+                width: 50%;
+            }
+        }
+    }
+}
+
+$colores11: #bdb1a2;
+$colores12: #877e74;
+$verde4: #379c5f;
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: $verde4;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    grid-area: formulario;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        width: 70%;
+
+        input {
+            background-color: $colores11;
+            transition: .1s;
+
+            &:hover {
+                background-color: $colores12;
+                padding: 1px;
+            }
+        }
+
+        textarea {
+            background-color: $colores11;
+            transition: .1s;
+
+            &:hover {
+                background-color: $colores12;
+                padding: 1px;
+            }
+        }
+    }
+}
+
+.mainContactos {
+    display: grid;
+    grid-area: mainContactos;
+    grid-template-areas: "seccionredes"
+        "formulario";
+}
+
+.bodyContactos {
+    display: grid;
+    grid-template-areas: "header header header"
+        "nav nav nav"
+        "mainContactos mainContactos mainContactos"
+        "footer footer footer";
+}

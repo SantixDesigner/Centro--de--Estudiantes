@@ -1,0 +1,88 @@
+$naranja1: #ff8c00;
+$naranja2: #e36b52;
+$amarillo1: #b9aa04;
+$naranja3: #844900;
+$colortitulo: rgb(37, 37, 37);
+$border: rgb(43, 0, 0);
+/* Header */
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #ff9f87;
+    height: 60px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    opacity: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    .headerImagenesTitulos {
+        width: 100%;
+        display: flex;
+
+        .headerTitle {
+            display: flex;
+            width: 500px;
+            margin: 0.5em;
+
+            .headerTitulo {
+                color: $colortitulo;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+
+        .imagenesHeader {
+            display: flex;
+            justify-content: space-evenly;
+            width: 30%;
+
+            .headerLogo {
+                width: 60px;
+                height: 60px;
+            }
+
+            .headerImagenTecnica {
+                width: 180px;
+                height: 60px;
+            }
+        }
+
+        .navSubHeader {
+            width: 75%;
+            justify-content: end;
+
+            .ulNav {
+                display: flex;
+                margin-block: 1.3em;
+                font-size: 14px;
+                font-weight: bold;
+                width: 100%;
+
+                .listItemNav {
+                    list-style: none;
+
+                    .aEnLi {
+                        text-decoration: none;
+                        color: $colortitulo;
+                        margin-left: 20px;
+                        background-image: radial-gradient(currentColor, currentColor);
+                        background-position: 50% 100%;
+                        background-size: 0% 0%, 2.5px;
+                        transition: .5s;
+                        font-size: 100%;
+
+                        &:hover,
+                        &:focus {
+                            color: green;
+                            background-size: 100% 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+$naranja5: #ff9f87;
+$colorextranio: rgb(0, 161, 54);
+.pieDePagina {
+    background-color: $naranja5;
+    grid-area: footer;
+    width: 100%;
+    font-weight: bold;
+
+    div {
+        display: flex;
+        justify-content: center;
+
+        p {
+            .creador {
+                transition: 2s;
+
+                &:hover {
+                    color: $colorextranio;
+                }
+            }
+        }
+    }
+
+    .divFooter2 {
+        justify-content: center;
+    }
+
+    .divFooter3 {
+        justify-content: center;
+
+        img {
+            max-width: 90%;
+        }
+    }
+}

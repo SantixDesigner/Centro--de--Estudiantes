@@ -1,0 +1,144 @@
+$naranja1: #ff8c00;
+$naranja2: #e36b52;
+$amarillo1: #b9aa04;
+$naranja3: #844900;
+$colorextranio: rgb(0, 161, 54);
+.mainInicial {
+    grid-area: main;
+
+    .sectionTotal {
+        grid-area: seccionCompleta;
+
+        .sectionTitle {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            border: 2px solid $border;
+            border-spacing: 2px;
+            width: 20%;
+            margin-left: 42.5%;
+            height: 50px;
+            grid-area: titulo;
+            border-radius: 20px;
+            overflow: hidden;
+            font-size: 14px;
+            background-color: $naranja1;
+
+            h2 {
+                @include h2(20px,100%,center,underline overline,2.5px,30px);
+            }
+        }
+        .miembrosDelCentro {
+            grid-area: miembros;
+            display: grid;
+            grid-template-areas: "lista--inferior lista--superior consejeros";
+            justify-content: space-around;
+            text-align: center;
+
+            .listaSuperior {
+                @include secciones($naranja2,lista--superior,20px,90%,auto);
+                h2 {
+                    @include h2-secciones(2px solid black,3px,18px,20px,2px);
+                    .estrella {
+                        width: 15px;
+                    }
+                }
+
+                .ulPrimeraSeccion {
+                    @include ul-class(flex,column,2px,2px solid rgb(18,0,0),$amarillo1,20px);
+                    .listItemsSeccion {
+                        @include listItem(none,5px,18px,bolder);
+                    }
+                }
+            }
+
+            .listaInferior {
+                @include secciones($naranja2,lista--inferior,20px,90%,auto);
+                h2 {
+                    @include h2-secciones(2px solid black,3px,18px,20px,2px);
+                }
+
+                .ulSegundaSeccion {
+                    @include ul-class(flex,column,2px,2px solid rgb(18,0,0),$amarillo1,20px);
+                    .listItemsSeccion {
+                        @include listItem(none,5px,18px,bolder);
+                    }
+                    .tachada {
+                        text-decoration: line-through;
+                    }
+                }
+            }
+
+            .consejeros {
+                @include secciones($naranja2,consejeros,20px,90%,auto);
+                h2 {
+                    @include h2-secciones(2px solid black,3px,18px,20px,2px);
+                }
+                .consejerosLista {
+                    @include ul-class(flex,column,2px,2px solid rgb(18,0,0),$amarillo1,20px);
+
+
+                    .listItemsSeccion {
+                        @include listItem(none,5px,18px,bolder);
+                    }
+                }
+            }
+        }
+
+        .flexRap {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+
+            .consignasDelCentro {
+                display: flex;
+                flex-flow: column nowrap;
+                border: 2px solid black;
+                background-color: $naranja1;
+                width: 43%;
+                justify-content: center;
+                grid-area: consignas;
+                .olPrimeraSeccion {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $amarillo1;
+                    border-top: 1px solid black;
+                    .listItemsSeccionDos {
+                        list-style: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+.asideDelIndex {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px 0px 3px 0px;
+    grid-area: aside;
+    flex-wrap: wrap;
+
+    img {
+        width: 400px;
+        height: auto;
+        max-width: 90%;
+    }
+
+    iframe {
+        width: 400px;
+        height: 400px;
+        max-width: 90%;
+    }
+}
+
+.gridPadreIndex {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+}
