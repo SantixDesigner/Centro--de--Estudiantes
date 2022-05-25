@@ -14,28 +14,31 @@ body {
   font-weight: 600; }
 
 .navSubClass {
-  background-color: #f0c1dd;
+  background-color: #f0c1dd; }
+
+.div1nav {
+  background-color: #f0c1dd; }
+
+.navSubClass {
   display: flex;
   display: none;
   grid-area: nav; }
-  .navSubClass .div1nav {
-    background-color: #f0c1dd; }
-    .navSubClass .div1nav .tamanio-img {
-      width: 50px; }
-    .navSubClass .div1nav .centrar-nav {
-      font-size: 25px;
-      text-align: center;
-      margin-left: 100%; }
-      .navSubClass .div1nav .centrar-nav li a {
-        color: #0a5ea3;
-        font-weight: bold;
-        background-image: radial-gradient(currentColor, currentColor);
-        background-position: 50% 100%;
-        background-size: 0% 0%, 2.5px;
-        transition: 1s; }
-        .navSubClass .div1nav .centrar-nav li a:hover {
-          color: green;
-          background-size: 100% 2px; }
+  .navSubClass .div1nav .tamanio-img {
+    width: 50px; }
+  .navSubClass .div1nav .centrar-nav {
+    font-size: 25px;
+    text-align: center;
+    margin-left: 100%; }
+    .navSubClass .div1nav .centrar-nav li a {
+      color: #0a5ea3;
+      font-weight: bold;
+      background-image: radial-gradient(currentColor, currentColor);
+      background-position: 50% 100%;
+      background-size: 0% 0%, 2.5px;
+      transition: 1s; }
+      .navSubClass .div1nav .centrar-nav li a:hover {
+        color: green;
+        background-size: 100% 2px; }
 
 @media (min-width: 0px) and (max-width: 1200px) {
   .imagenesHeader a {
@@ -107,7 +110,8 @@ body {
         margin-block: 1.3em;
         font-size: 14px;
         font-weight: bold;
-        width: 100%; }
+        width: 100%;
+        margin-left: auto; }
         .header .headerImagenesTitulos .navSubHeader .ulNav .listItemNav {
           list-style: none; }
           .header .headerImagenesTitulos .navSubHeader .ulNav .listItemNav .aEnLi {

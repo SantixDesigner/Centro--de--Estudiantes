@@ -1,10 +1,15 @@
+$colores:(navSubClass:#f0c1dd, div1nav: #f0c1dd);
+
+@each $red,$color in $colores{
+    .#{$red}{
+        background-color: $color;
+    }
+}
 .navSubClass{
-    background-color: #f0c1dd;
     display: flex;
     display: none;
     grid-area: nav;
     .div1nav{
-        background-color: #f0c1dd;
         .tamanio-img{
             width: 50px;
         }
@@ -12,22 +17,23 @@
             font-size: 25px;
             text-align: center;
             margin-left: 100%;
-            li a{
-                color:#0a5ea3;
-                font-weight: bold;
-                background-image: radial-gradient(currentColor, currentColor);
-                background-position: 50% 100%;
-                background-size: 0% 0%, 2.5px;
-                transition:1s;
-                &:hover{
-                    color:green;
-                    background-size: 100% 2px;
+            li {
+                a{
+                    color:#0a5ea3;
+                    font-weight: bold;
+                    background-image: radial-gradient(currentColor, currentColor);
+                    background-position: 50% 100%;
+                    background-size: 0% 0%, 2.5px;
+                    transition:1s;
+                    &:hover{
+                        color:green;
+                        background-size: 100% 2px;
+                    }
                 }
             }
         }
         
     }
-    
 }
 @media (min-width:0px) and (max-width:1200px){
     .imagenesHeader{

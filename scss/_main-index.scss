@@ -3,6 +3,8 @@ $naranja2: #e36b52;
 $amarillo1: #b9aa04;
 $naranja3: #844900;
 $colorextranio: rgb(0, 161, 54);
+
+$propiedad: (display:flex,js:center,pt:10px,border:2px solid $border, borderspa:2px, ancho:20%, ml:42.5%, alto:50px, ga:titulo, br:20px, overflow:hidden, fs:14px, bc:$naranja1);
 .mainInicial {
     grid-area: main;
 
@@ -10,20 +12,19 @@ $colorextranio: rgb(0, 161, 54);
         grid-area: seccionCompleta;
 
         .sectionTitle {
-            display: flex;
-            justify-content: center;
-            padding-top: 10px;
-            border: 2px solid $border;
-            border-spacing: 2px;
-            width: 20%;
-            margin-left: 42.5%;
-            height: 50px;
-            grid-area: titulo;
-            border-radius: 20px;
-            overflow: hidden;
-            font-size: 14px;
-            background-color: $naranja1;
-
+            display: map-get($map: $propiedad, $key:display);
+            justify-content: map-get($map: $propiedad, $key: js);
+            padding-top: map-get($map: $propiedad, $key: pt);
+            border: map-get($map: $propiedad, $key: border);
+            border-spacing: map-get($map: $propiedad, $key: borderspa);
+            width: map-get($map: $propiedad, $key:ancho );
+            margin-left: map-get($map: $propiedad, $key: ml );
+            height: map-get($map: $propiedad, $key:alto );
+            grid-area: map-get($map: $propiedad, $key: ga );
+            border-radius: map-get($map: $propiedad, $key: br);
+            overflow: map-get($map: $propiedad, $key:overflow);
+            font-size: map-get($map: $propiedad, $key:fs );
+            background-color: map-get($map: $propiedad, $key: bc);
             h2 {
                 @include h2(20px,100%,center,underline overline,2.5px,30px);
             }
