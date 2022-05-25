@@ -41,25 +41,21 @@ $azulado2: #709976;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-
     div {
         display: flex;
         flex-direction: column;
         background-color: $verde3;
         max-width: 230px;
-
         h3 {
             background-color: $azulado2;
             margin-bottom: 3px;
         }
-
         img {
             width: 95%;
             margin-left: 5px;
         }
     }
 }
-
 .bodyProject {
     display: grid;
     grid-template-areas:
