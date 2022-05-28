@@ -17,16 +17,16 @@ body {
     font-weight: 600;
 
 }
+@import "mixin";
 @import "navboots";
 @import "header";
-@import "mixin";
 @import "main-index";
 @import "quienes-somos";
 @import "proyectos";
 @import "main-lista";
 @import "ideas";
 @import "contactos";
-@import "media-querie";
 @import "footer";
+@import "media-querie";
 $colortitulo: rgb(37, 37, 37);
 $border: rgb(43, 0, 0);

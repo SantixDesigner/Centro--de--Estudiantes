@@ -38,8 +38,10 @@ $propiedad: (display:flex,js:center,pt:10px,border:2px solid $border, borderspa:
 
             .listaSuperior {
                 @include secciones($naranja2,lista--superior,20px,90%,auto);
+                
                 h2 {
                     @include h2-secciones(2px solid black,3px,18px,20px,2px);
+                    @include gradiantes((45deg, rgb(0, 132, 255) 0%, rgb(255, 0, 200) 100%), text, transparent);
                     .estrella {
                         width: 15px;
                     }
@@ -57,6 +59,7 @@ $propiedad: (display:flex,js:center,pt:10px,border:2px solid $border, borderspa:
                 @include secciones($naranja2,lista--inferior,20px,90%,auto);
                 h2 {
                     @include h2-secciones(2px solid black,3px,18px,20px,2px);
+                    @include gradiantes((45deg, rgb(0, 132, 255) 0%, rgb(255, 0, 200) 100%), text, transparent);
                 }
 
                 .ulSegundaSeccion {
@@ -74,6 +77,7 @@ $propiedad: (display:flex,js:center,pt:10px,border:2px solid $border, borderspa:
                 @include secciones($naranja2,consejeros,20px,90%,auto);
                 h2 {
                     @include h2-secciones(2px solid black,3px,18px,20px,2px);
+                    @include gradiantes((45deg, rgb(0, 132, 255) 0%, rgb(255, 0, 200) 100%), text, transparent);
                 }
                 .consejerosLista {
                     @include ul-class(flex,column,2px,2px solid rgb(18,0,0),$amarillo1,20px);

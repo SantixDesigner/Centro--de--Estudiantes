@@ -86,12 +86,16 @@ body {
     display: flex; }
     .header .headerImagenesTitulos .headerTitle {
       display: flex;
-      width: 500px;
-      margin: 0.5em; }
+      width: 495px;
+      margin: 0.5em;
+      justify-content: center; }
       .header .headerImagenesTitulos .headerTitle .headerTitulo {
         color: #252525;
         font-size: 30px;
-        font-weight: bold; }
+        font-weight: bold;
+        background: -webkit-linear-gradient(45deg, #00DBDE 0%, #FC00FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
     .header .headerImagenesTitulos .imagenesHeader {
       display: flex;
       justify-content: space-evenly;
@@ -104,26 +108,28 @@ body {
         height: 60px; }
     .header .headerImagenesTitulos .navSubHeader {
       width: 75%;
-      justify-content: end; }
+      margin-right: 10px; }
       .header .headerImagenesTitulos .navSubHeader .ulNav {
         display: flex;
-        margin-block: 1.3em;
-        font-size: 14px;
+        margin-block: 1em;
+        font-size: 17px;
         font-weight: bold;
         width: 100%;
-        margin-left: auto; }
+        justify-content: flex-end;
+        margin-right: 10px; }
         .header .headerImagenesTitulos .navSubHeader .ulNav .listItemNav {
           list-style: none; }
           .header .headerImagenesTitulos .navSubHeader .ulNav .listItemNav .aEnLi {
             text-decoration: none;
-            color: #252525;
+            color: #005ac0;
             margin-left: 20px;
             background-image: radial-gradient(currentColor, currentColor);
             background-position: 50% 100%;
             background-size: 0% 0%, 2.5px;
-            transition: .5s;
+            transition: .3s;
             font-size: 100%; }
             .header .headerImagenesTitulos .navSubHeader .ulNav .listItemNav .aEnLi:hover, .header .headerImagenesTitulos .navSubHeader .ulNav .listItemNav .aEnLi:focus {
+              font-size: 20px;
               color: green;
               background-size: 100% 2px; }
 
@@ -169,7 +175,10 @@ body {
           margin: 3px;
           font-size: 18px;
           border-radius: 20px;
-          padding: 2px; }
+          padding: 2px;
+          background: -webkit-linear-gradient(45deg, #0084ff 0%, #ff00c8 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
           .mainInicial .sectionTotal .miembrosDelCentro .listaSuperior h2 .estrella {
             width: 15px; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaSuperior .ulPrimeraSeccion {
@@ -195,7 +204,10 @@ body {
           margin: 3px;
           font-size: 18px;
           border-radius: 20px;
-          padding: 2px; }
+          padding: 2px;
+          background: -webkit-linear-gradient(45deg, #0084ff 0%, #ff00c8 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaInferior .ulSegundaSeccion {
           display: flex;
           flex-direction: column;
@@ -221,7 +233,10 @@ body {
           margin: 3px;
           font-size: 18px;
           border-radius: 20px;
-          padding: 2px; }
+          padding: 2px;
+          background: -webkit-linear-gradient(45deg, #0084ff 0%, #ff00c8 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
         .mainInicial .sectionTotal .miembrosDelCentro .consejeros .consejerosLista {
           display: flex;
           flex-direction: column;
@@ -486,32 +501,6 @@ body {
         border-bottom: 0.2px solid black; }
 
 /* Contactos */
-.instagramContactos {
-  display: flex;
-  flex-direction: column;
-  background-color: #2a8dc4;
-  width: 40%;
-  margin: auto;
-  text-align: center;
-  grid-area: seccionredes; }
-  .instagramContactos div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .instagramContactos div a {
-      width: 20%; }
-      .instagramContactos div a img {
-        width: 20%;
-        height: 50px; }
-      .instagramContactos div a .instagram {
-        width: 50%;
-        height: 50px; }
-      .instagramContactos div a .facebook {
-        width: 50%;
-        height: 50px; }
-      .instagramContactos div a .whatsapp {
-        width: 50%; }
-
 .formulario {
   display: flex;
   flex-direction: column;
@@ -525,28 +514,71 @@ body {
     flex-direction: column;
     margin: auto;
     text-align: center;
-    width: 70%; }
+    width: 70%;
+    font-weight: bold; }
     .formulario div input {
-      background-color: #bdb1a2;
-      transition: .1s; }
-      .formulario div input:hover {
-        background-color: #877e74;
-        padding: 1px; }
+      background-color: #c41d00;
+      transition: .1s;
+      border: none;
+      border-radius: 15px 0 0 15px;
+      padding-left: 5px;
+      font-weight: bold;
+      text-align: center;
+      color: #131313; }
+      .formulario div input:hover, .formulario div input focus {
+        border-bottom: 2px solid #646efc; }
+    .formulario div .envio {
+      margin-bottom: 5px; }
     .formulario div textarea {
-      background-color: #bdb1a2;
-      transition: .1s; }
-      .formulario div textarea:hover {
-        background-color: #877e74;
-        padding: 1px; }
+      background-color: #c41d00;
+      transition: .1s;
+      border: none;
+      border-bottom: 2px solid #646efc;
+      margin-bottom: 5px;
+      border-radius: 15px 0 0 0;
+      padding: 5px;
+      font-weight: bold;
+      text-align: center;
+      color: #131313; }
+      .formulario div textarea:hover, .formulario div textarea focus {
+        border-bottom: 2px solid #646efc; }
 
 .mainContactos {
   display: grid;
   grid-area: mainContactos;
-  grid-template-areas: "seccionredes" "formulario"; }
+  grid-template-areas: "formulario"; }
 
 .bodyContactos {
   display: grid;
   grid-template-areas: "header header header" "nav nav nav" "mainContactos mainContactos mainContactos" "footer footer footer"; }
+
+.pieDePagina {
+  background-color: #ff9f87;
+  grid-area: footer;
+  width: 100%;
+  font-weight: bold; }
+  .pieDePagina .contenedorPie {
+    display: flex; }
+    .pieDePagina .contenedorPie .pieParrafo {
+      display: flex;
+      margin-left: 105px;
+      width: 100%;
+      justify-content: center;
+      grid-area: nombre; }
+    .pieDePagina .contenedorPie .pieRedes {
+      display: flex; }
+      .pieDePagina .contenedorPie .pieRedes a img {
+        margin-left: 10px;
+        width: 25px;
+        height: 25px; }
+  .pieDePagina .divFooter2 {
+    display: flex;
+    justify-content: center; }
+  .pieDePagina .divFooter3 {
+    display: flex;
+    justify-content: center; }
+    .pieDePagina .divFooter3 img {
+      max-width: 90%; }
 
 /* Index media querie */
 @media (min-width: 0) and (max-width: 420px) {
@@ -784,21 +816,10 @@ body {
     display: grid;
     grid-template-areas: "header" "nav" "main" "aside" "footer"; } }
 
-.pieDePagina {
-  background-color: #ff9f87;
-  grid-area: footer;
-  width: 100%;
-  font-weight: bold; }
-  .pieDePagina div {
-    display: flex;
+@media (min-width: 0) and (max-width: 600px) {
+  .pieDePagina .contenedorPie {
+    flex-wrap: wrap;
     justify-content: center; }
-    .pieDePagina div p .creador {
-      transition: 2s; }
-      .pieDePagina div p .creador:hover {
-        color: #00a136; }
-  .pieDePagina .divFooter2 {
-    justify-content: center; }
-  .pieDePagina .divFooter3 {
-    justify-content: center; }
-    .pieDePagina .divFooter3 img {
-      max-width: 90%; }
+    .pieDePagina .contenedorPie .pieParrafo {
+      margin-left: auto;
+      margin-right: auto; } }

@@ -34,3 +34,8 @@
     font-size: $fs;
     font-weight: $fw;
 }
+@mixin gradiantes ($bg, $wbc, $wtfc){
+    background: -webkit-linear-gradient($bg);
+    -webkit-background-clip: $wbc;
+    -webkit-text-fill-color: $wtfc;
+}

@@ -3,7 +3,9 @@ $naranja2: #e36b52;
 $amarillo1: #b9aa04;
 $naranja3: #844900;
 $colortitulo: rgb(37, 37, 37);
+$colorA:#005ac0; 
 $border: rgb(43, 0, 0);
+
 /* Header */
 .header {
     display: flex;
@@ -25,13 +27,14 @@ $border: rgb(43, 0, 0);
 
         .headerTitle {
             display: flex;
-            width: 500px;
+            width: 495px;
             margin: 0.5em;
-
+            justify-content: center;
             .headerTitulo {
                 color: $colortitulo;
                 font-size: 30px;
                 font-weight: bold;
+                @include gradiantes((45deg, #00DBDE 0%, #FC00FF 100%), text, transparent);
             }
         }
 
@@ -53,30 +56,29 @@ $border: rgb(43, 0, 0);
 
         .navSubHeader {
             width: 75%;
-            justify-content: end;
-
+            margin-right: 10px;
             .ulNav {
                 display: flex;
-                margin-block: 1.3em;
-                font-size: 14px;
+                margin-block: 1em;
+                font-size: 17px;
                 font-weight: bold;
                 width: 100%;
-                margin-left: auto;
+                justify-content: flex-end;
+                margin-right: 10px;
                 .listItemNav {
                     list-style: none;
-
                     .aEnLi {
                         text-decoration: none;
-                        color: $colortitulo;
+                        color: $colorA;
                         margin-left: 20px;
                         background-image: radial-gradient(currentColor, currentColor);
                         background-position: 50% 100%;
                         background-size: 0% 0%, 2.5px;
-                        transition: .5s;
+                        transition: .3s;
                         font-size: 100%;
-
                         &:hover,
                         &:focus {
+                            font-size: 20px;
                             color: green;
                             background-size: 100% 2px;
                         }
