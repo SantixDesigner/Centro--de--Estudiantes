@@ -174,7 +174,7 @@ body {
         background-color: #e36b52;
         grid-area: lista--superior;
         border-radius: 20px;
-        max-width: 90%;
+        max-width: 100%;
         margin: auto; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaSuperior h2 {
           border: 2px solid black;
@@ -203,7 +203,7 @@ body {
         background-color: #e36b52;
         grid-area: lista--inferior;
         border-radius: 20px;
-        max-width: 90%;
+        max-width: 100%;
         margin: auto; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaInferior h2 {
           border: 2px solid black;
@@ -232,7 +232,7 @@ body {
         background-color: #e36b52;
         grid-area: consejeros;
         border-radius: 20px;
-        max-width: 90%;
+        max-width: 100%;
         margin: auto; }
         .mainInicial .sectionTotal .miembrosDelCentro .consejeros h2 {
           border: 2px solid black;
@@ -610,7 +610,7 @@ body {
         margin: auto; }
       .mainInicial .sectionTotal .miembrosDelCentro {
         display: grid;
-        grid-template-areas: "lista--inferior" "lista--superior" "consejeros"; }
+        grid-template-areas: "lista--superior" "lista--inferior" "consejeros"; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaInferior {
           width: 100%; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaSuperior {
@@ -642,15 +642,15 @@ body {
     flex-wrap: wrap;
     width: 100%; }
     .mainInicial .sectionTotal .miembrosDelCentro .listaSuperior {
-      width: 25%;
+      width: 33%;
       text-align: center;
       font-size: 10px; }
     .mainInicial .sectionTotal .miembrosDelCentro .listaInferior {
-      width: 25%;
+      width: 33%;
       text-align: center;
       font-size: 10px; }
     .mainInicial .sectionTotal .miembrosDelCentro .consejeros {
-      width: 25%;
+      width: 33%;
       text-align: center;
       font-size: 10px; }
   .mainInicial .sectionTotal .flexRap {

@@ -37,7 +37,7 @@ $propiedad: (display:flex,js:center,pt:10px,border:2px solid $border, borderspa:
             text-align: center;
 
             .listaSuperior {
-                @include secciones($naranja2,lista--superior,20px,90%,auto);
+                @include secciones($naranja2,lista--superior,20px,100%,auto);
                 
                 h2 {
                     @include h2-secciones(2px solid black,3px,18px,20px,2px);
@@ -56,7 +56,7 @@ $propiedad: (display:flex,js:center,pt:10px,border:2px solid $border, borderspa:
             }
 
             .listaInferior {
-                @include secciones($naranja2,lista--inferior,20px,90%,auto);
+                @include secciones($naranja2,lista--inferior,20px,100%,auto);
                 h2 {
                     @include h2-secciones(2px solid black,3px,18px,20px,2px);
                     @include gradiantes((45deg, rgb(0, 132, 255) 0%, rgb(255, 0, 200) 100%), text, transparent);
@@ -74,7 +74,7 @@ $propiedad: (display:flex,js:center,pt:10px,border:2px solid $border, borderspa:
             }
 
             .consejeros {
-                @include secciones($naranja2,consejeros,20px,90%,auto);
+                @include secciones($naranja2,consejeros,20px,100%,auto);
                 h2 {
                     @include h2-secciones(2px solid black,3px,18px,20px,2px);
                     @include gradiantes((45deg, rgb(0, 132, 255) 0%, rgb(255, 0, 200) 100%), text, transparent);

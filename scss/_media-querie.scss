@@ -46,10 +46,9 @@
 
             .miembrosDelCentro {
                 display: grid;
-                grid-template-areas: "lista--inferior"
-                    "lista--superior"
+                grid-template-areas: "lista--superior"
+                    "lista--inferior"
                     "consejeros";
-
                 .listaInferior {
                     width: 100%;
                 }
@@ -116,19 +115,19 @@
                 width: 100%;
 
                 .listaSuperior {
-                    width: 25%;
+                    width: 33%;
                     text-align: center;
                     font-size: 10px;
                 }
 
                 .listaInferior {
-                    width: 25%;
+                    width: 33%;
                     text-align: center;
                     font-size: 10px;
                 }
 
                 .consejeros {
-                    width: 25%;
+                    width: 33%;
                     text-align: center;
                     font-size: 10px;
                 }
