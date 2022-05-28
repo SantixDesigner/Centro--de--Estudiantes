@@ -612,11 +612,11 @@ body {
         display: grid;
         grid-template-areas: "lista--superior" "lista--inferior" "consejeros"; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaInferior {
-          width: 100%; }
+          width: 90%; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaSuperior {
-          width: 100%; }
+          width: 90%; }
         .mainInicial .sectionTotal .miembrosDelCentro .consejeros {
-          width: 100%; }
+          width: 90%; }
       .mainInicial .sectionTotal .flexRap {
         width: 95%; }
         .mainInicial .sectionTotal .flexRap .consignasDelCentro {
