@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@200&family=Quicksand:wght@300&family=Roboto:wght@300&family=Tangerine:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -91,7 +92,12 @@ body {
       justify-content: center; }
       .header .headerImagenesTitulos .headerTitle .headerTitulo {
         color: #252525;
-        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Tangerine', cursive;
+        font-size: 40px;
         font-weight: bold;
         background: -webkit-linear-gradient(45deg, #00DBDE 0%, #FC00FF 100%);
         -webkit-background-clip: text;
@@ -583,14 +589,14 @@ body {
       max-width: 90%; }
 
 /* Index media querie */
-@media (min-width: 0) and (max-width: 420px) {
+@media (min-width: 0) and (max-width: 450px) {
   .gridPadreIndex {
     display: grid;
     grid-template-areas: "header" "nav" "main" "aside" "footer"; }
   .header {
     flex-direction: column; }
     .header .headerImagenesTitulos .headerTitle .headerTitulo {
-      font-size: 25px; }
+      font-size: 35px; }
     .header .headerImagenesTitulos .imagenesHeader {
       display: none; }
     .header .navSubHeader {
@@ -697,13 +703,13 @@ body {
 /* props al header a todos */
 @media (min-width: 200px) and (max-width: 300px) {
   .header .headerImagenesTitulos .headerTitle .headerTitulo {
-    font-size: 100%; }
+    font-size: 30px; }
   .mainInicial .sectionTotal .sectionTitle h2 {
     font-size: 100%; } }
 
 @media (min-width: 0px) and (max-width: 200px) {
   .header .headerImagenesTitulos .headerTitle .headerTitulo {
-    font-size: 100%; }
+    font-size: 20px; }
   .mainInicial .sectionTotal .sectionTitle h2 {
     font-size: 100%; } }
 
@@ -737,8 +743,10 @@ body {
     grid-template-areas: "miembrosLista" "seccionAbajo" "ultimaSeccion"; }
     .mainLista .sectionLista {
       margin-top: 20px;
-      width: 90%;
+      width: 97%;
       margin-bottom: 25px; }
+      .mainLista .sectionLista .olSectionLista .miembrosLista {
+        font-size: 14px; }
     .mainLista .sectionListaAbajo {
       width: 90%;
       margin-bottom: 25px; }

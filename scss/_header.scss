@@ -32,7 +32,12 @@ $border: rgb(43, 0, 0);
             justify-content: center;
             .headerTitulo {
                 color: $colortitulo;
-                font-size: 30px;
+                font-family: 'Open Sans', sans-serif;
+                font-family: 'Poppins', sans-serif;
+                font-family: 'Quicksand', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                font-family: 'Tangerine', cursive;;
+                font-size: 40px;
                 font-weight: bold;
                 @include gradiantes((45deg, #00DBDE 0%, #FC00FF 100%), text, transparent);
             }

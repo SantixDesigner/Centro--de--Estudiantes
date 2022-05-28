@@ -1,5 +1,5 @@
 /* Index media querie */
-@media (min-width:0) and (max-width:420px) {
+@media (min-width:0) and (max-width:450px) {
     .gridPadreIndex {
         display: grid;
         grid-template-areas:
@@ -16,7 +16,7 @@
         .headerImagenesTitulos {
             .headerTitle {
                 .headerTitulo {
-                    font-size: 25px;
+                    font-size: 35px;
                 }
 
             }
@@ -248,7 +248,7 @@
         .headerImagenesTitulos {
             .headerTitle {
                 .headerTitulo {
-                    font-size: 100%;
+                    font-size: 30px;
                 }
             }
         }
@@ -270,7 +270,7 @@
         .headerImagenesTitulos {
             .headerTitle {
                 .headerTitulo {
-                    font-size: 100%;
+                    font-size: 20px;
                 }
             }
         }
@@ -342,8 +342,13 @@
 
         .sectionLista {
             margin-top: 20px;
-            width: 90%;
+            width: 97%;
             margin-bottom: 25px;
+            .olSectionLista{
+                .miembrosLista{
+                    font-size: 14px;
+                }
+            }
         }
 
         .sectionListaAbajo {
