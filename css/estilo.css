@@ -418,7 +418,8 @@ body {
       .mainLista .sectionLista .olSectionLista .miembrosLista {
         list-style: none;
         text-align: center;
-        background-color: #f6aa62; }
+        background-color: #f6aa62;
+        font-weight: bold; }
       .mainLista .sectionLista .olSectionLista #miembroPresidente {
         background-color: #22f1ee;
         border-bottom: .5px solid black;
