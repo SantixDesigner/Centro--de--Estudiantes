@@ -294,12 +294,20 @@ body {
 
 .gridPadreIndex {
   display: grid;
-  grid-template-areas: "header header header" "nav nav nav" "main main main" "aside aside aside" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "nav nav nav"
+ "main main main"
+ "aside aside aside"
+ "footer footer footer"; }
 
 /* Quienes somos */
 .bodyGridQuienesSomos {
   display: grid;
-  grid-template-areas: "header header header" "nav nav nav" "mainQS mainQS mainQS" "asideQS asideQS asideQS" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "nav nav nav"
+ "mainQS mainQS mainQS"
+ "asideQS asideQS asideQS"
+ "footer footer footer"; }
 
 .mainQS {
   grid-area: mainQS; }
@@ -349,7 +357,8 @@ body {
   grid-area: mainProject; }
   .mainProjects .sectionProyectos {
     display: grid;
-    grid-template-areas: "ol1" "ol2";
+    grid-template-areas: "ol1"
+ "ol2";
     justify-content: center; }
     .mainProjects .sectionProyectos .sectionProyectosOl1 {
       width: 80%;
@@ -397,16 +406,25 @@ body {
 
 .bodyProject {
   display: grid;
-  grid-template-areas: "header header header" "nav nav nav" "mainProject mainProject mainProject" "asideProjects asideProjects asideProjects" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "nav nav nav"
+ "mainProject mainProject mainProject"
+ "asideProjects asideProjects asideProjects"
+ "footer footer footer"; }
 
 /* Lista */
 .bodyLista {
   display: grid;
-  grid-template-areas: "header header header" "nav nav nav" "mainLista mainLista mainLista" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "nav nav nav"
+ "mainLista mainLista mainLista"
+ "footer footer footer"; }
 
 .mainLista {
   display: grid;
-  grid-template-areas: "seccionAbajo" "miembrosLista" "ultimaSeccion";
+  grid-template-areas: "seccionAbajo"
+ "miembrosLista"
+ "ultimaSeccion";
   grid-area: mainLista; }
   .mainLista .sectionLista {
     display: flex;
@@ -461,10 +479,15 @@ body {
 /* Ideas nuevas */
 .bodyIdeas {
   display: grid;
-  grid-template-areas: "header header header" "nav nav nav" "mainIdeas mainIdeas mainIdeas" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "nav nav nav"
+ "mainIdeas mainIdeas mainIdeas"
+ "footer footer footer"; }
   .bodyIdeas .unicaSectionIdeas {
     display: grid;
-    grid-template-areas: "nota1" "nota2" "explicacion";
+    grid-template-areas: "nota1"
+ "nota2"
+ "explicacion";
     grid-area: mainIdeas; }
     .bodyIdeas .unicaSectionIdeas .explicacionPagina {
       display: flex;
@@ -557,7 +580,10 @@ body {
 
 .bodyContactos {
   display: grid;
-  grid-template-areas: "header header header" "nav nav nav" "mainContactos mainContactos mainContactos" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "nav nav nav"
+ "mainContactos mainContactos mainContactos"
+ "footer footer footer"; }
 
 .pieDePagina {
   background-color: #ff9f87;
@@ -592,7 +618,11 @@ body {
 @media (min-width: 0) and (max-width: 450px) {
   .gridPadreIndex {
     display: grid;
-    grid-template-areas: "header" "nav" "main" "aside" "footer"; }
+    grid-template-areas: "header"
+ "nav"
+ "main"
+ "aside"
+ "footer"; }
   .header {
     flex-direction: column; }
     .header .headerImagenesTitulos .headerTitle .headerTitulo {
@@ -610,7 +640,9 @@ body {
         margin: auto; }
       .mainInicial .sectionTotal .miembrosDelCentro {
         display: grid;
-        grid-template-areas: "lista--superior" "lista--inferior" "consejeros"; }
+        grid-template-areas: "lista--superior"
+ "lista--inferior"
+ "consejeros"; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaInferior {
           width: 90%; }
         .mainInicial .sectionTotal .miembrosDelCentro .listaSuperior {
@@ -674,9 +706,14 @@ body {
 /* ideas-nuevas media querie */
 @media (min-width: 0px) and (max-width: 800px) {
   .bodyIdeas {
-    grid-template-areas: "header" "nav" "mainIdeas" "footer"; }
+    grid-template-areas: "header"
+ "nav"
+ "mainIdeas"
+ "footer"; }
     .bodyIdeas .unicaSectionIdeas {
-      grid-template-areas: "nota1" "nota2" "explicacion"; }
+      grid-template-areas: "nota1"
+ "nota2"
+ "explicacion"; }
       .bodyIdeas .unicaSectionIdeas .explicacionPagina {
         width: 90%; }
       .bodyIdeas .unicaSectionIdeas .nota1 {
@@ -716,7 +753,8 @@ body {
 /* Quienes Somos */
 @media (min-width: 0px) and (max-width: 1000px) {
   .mainQS .sectionQS {
-    grid-template-areas: "seccion1" "seccion2";
+    grid-template-areas: "seccion1"
+ "seccion2";
     margin-top: 10px; }
     .mainQS .sectionQS .sectionDiv1 {
       width: 90%;
@@ -729,7 +767,11 @@ body {
     max-width: 500px;
     margin-bottom: 15px; }
   .bodyGridQuienesSomos {
-    grid-template-areas: "header" "nav" "mainQS" "asideQS" "footer"; } }
+    grid-template-areas: "header"
+ "nav"
+ "mainQS"
+ "asideQS"
+ "footer"; } }
 
 @media (min-width: 1001px) and (max-width: 1920px) {
   .sectionQS .sectionDiv1 {
@@ -740,7 +782,9 @@ body {
 /* Nuestra Lista media-querie */
 @media (min-width: 0px) and (max-width: 650px) {
   .mainLista {
-    grid-template-areas: "miembrosLista" "seccionAbajo" "ultimaSeccion"; }
+    grid-template-areas: "miembrosLista"
+ "seccionAbajo"
+ "ultimaSeccion"; }
     .mainLista .sectionLista {
       margin-top: 20px;
       width: 97%;
@@ -755,7 +799,10 @@ body {
       margin-bottom: 200px; }
   .bodyLista {
     display: grid;
-    grid-template-areas: "header" "nav" "mainLista" "footer"; } }
+    grid-template-areas: "header"
+ "nav"
+ "mainLista"
+ "footer"; } }
 
 @media (min-width: 651px) and (max-width: 1200px) {
   .mainLista .sectionLista {
@@ -771,7 +818,8 @@ body {
     width: 90%;
     margin: auto; }
     .mainProjects .sectionProyectos {
-      grid-template-areas: "ol1" "ol2";
+      grid-template-areas: "ol1"
+ "ol2";
       margin: auto; }
       .mainProjects .sectionProyectos .sectionProyectosOl1 {
         width: 100%;
@@ -788,7 +836,11 @@ body {
       width: 90%;
       max-width: 230px; }
   .bodyProject {
-    grid-template-areas: "header" "nav" "mainProject" "asideProjects" "footer"; } }
+    grid-template-areas: "header"
+ "nav"
+ "mainProject"
+ "asideProjects"
+ "footer"; } }
 
 @media (min-width: 601px) and (max-width: 1200px) {
   .sectionProyectosOl1 .olItem {
@@ -799,7 +851,8 @@ body {
 /* Contacto media-querie */
 @media (min-width: 0px) and (max-width: 750px) {
   .mainContactos {
-    grid-template-areas: "seccionredes" "formulario"; }
+    grid-template-areas: "seccionredes"
+ "formulario"; }
   .formulario {
     margin-top: 5px;
     width: 90%;
@@ -814,7 +867,10 @@ body {
     width: 90%;
     margin-right: auto; }
   .bodyContactos {
-    grid-template-areas: "header" "nav" "mainContactos" "footer"; } }
+    grid-template-areas: "header"
+ "nav"
+ "mainContactos"
+ "footer"; } }
 
 @media (max-width: 375px) {
   .formulario form div input {
@@ -824,7 +880,11 @@ body {
 @media (min-width: 0) and (max-width: 1200px) {
   .gridPadreIndex {
     display: grid;
-    grid-template-areas: "header" "nav" "main" "aside" "footer"; } }
+    grid-template-areas: "header"
+ "nav"
+ "main"
+ "aside"
+ "footer"; } }
 
 @media (min-width: 0) and (max-width: 600px) {
   .pieDePagina .contenedorPie {
