@@ -13,6 +13,7 @@ $colores9: #c7d1e1;
         display: grid;
         grid-template-areas: "nota1"
             "nota2"
+            "nota3"
             "explicacion";
         grid-area: mainIdeas;
 
@@ -34,7 +35,7 @@ $colores9: #c7d1e1;
                 text-align: center;
             }
         }
-        @for $i from 1 through 2{
+        @for $i from 1 through 3{
             .nota#{$i}{
                 display: flex;
                 flex-flow: column wrap;
