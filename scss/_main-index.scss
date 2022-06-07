@@ -95,18 +95,13 @@ $propiedad: (display:flex,js:center,pt:10px,border:2px solid $border, borderspa:
             margin: auto;
             display: flex;
             justify-content: center;
-
             .consignasDelCentro {
-                display: flex;
-                flex-flow: column nowrap;
                 border: 2px solid black;
                 background-color: $naranja1;
                 width: 43%;
                 justify-content: center;
                 grid-area: consignas;
                 .olPrimeraSeccion {
-                    display: flex;
-                    flex-direction: column;
                     background-color: $amarillo1;
                     border-top: 1px solid black;
                     .listItemsSeccionDos {

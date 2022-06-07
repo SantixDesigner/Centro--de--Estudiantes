@@ -18,16 +18,13 @@ $colores9: #c7d1e1;
         grid-area: mainIdeas;
 
         .explicacionPagina {
-            display: flex;
-            flex-flow: column wrap;
             background-color: $colores7;
-
             width: 25%;
             margin: auto;
             margin-bottom: 100px;
             border: 0.2px solid black;
             grid-area: explicacion;
-
+            font-weight: bold;
             h2 {
                 background-color: $colores3;
                 width: 100%;
@@ -37,12 +34,10 @@ $colores9: #c7d1e1;
         }
         @for $i from 1 through 3{
             .nota#{$i}{
-                display: flex;
-                flex-flow: column wrap;
                 width: 25%;
                 margin: auto;
                 margin-bottom: 100px;
-                background-color: $colores9;
+                background-color: $colores7;
                 border: .2px solid black;
                 font-weight: bold;
                 grid-area: nota#{$i};

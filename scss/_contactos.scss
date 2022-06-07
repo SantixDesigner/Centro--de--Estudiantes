@@ -9,7 +9,7 @@ $verde4: #379c5f;
 .formulario {
     display: flex;
     flex-direction: column;
-    background-color: $verde4;
+    background-color: $amarillo1;
     width: 51%;
     margin: auto;
     text-align: center;
@@ -24,7 +24,7 @@ $verde4: #379c5f;
         font-weight: bold;
 
         input {
-            background-color: rgb(196, 29, 0);
+            background-color: $colores11;
             transition: .1s;
             border: none;
             border-radius: 15px 0 0 15px;
@@ -41,7 +41,7 @@ $verde4: #379c5f;
         }
 
         textarea {
-            background-color: rgb(196, 29, 0);
+            background-color: $colores11;
             transition: .1s;
             border: none;
             border-bottom: 2px solid rgb(100, 110, 252);

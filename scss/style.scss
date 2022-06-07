@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@200&family=Quicksand:wght@300&family=Roboto:wght@300&family=Tangerine:wght@700&display=swap');
+$naranja1: #ff8c00;
+$naranja2: #e36b52;
+$amarillo1: #b9aa04;
+$naranja3: #844900;
+$colorextranio: rgb(0, 161, 54);
+$rosa: #af5a91;
+$rosa2: #f872c2;
+$verde3: #e79e00;
+$azulado3: #87bc7c;
+$azulado1: #1ca700;
+$azulado2: #709976;
+$naranja1: #ff8c00;
+$naranja2: #e36b52;
+$amarillo1: #b9aa04;
+$naranja3: #844900;
+$colortitulo: rgb(37, 37, 37);
+$colorA:#005ac0; 
+$border: rgb(43, 0, 0);
+$colores1: #b5f547;
+$colores2: #f6aa62;
+$colores3: #22f1ee;
+$colores4: #ad6903;
+$colores5: #00e5ff;
+$colores6: #c7d1e1;
+$colores8: #bdb1a2;
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +44,8 @@ body {
     font-weight: 600;
 
 }
+@import "footer";
+@import "ideas";
 @import "mixin";
 @import "navboots";
 @import "header";
@@ -25,9 +53,7 @@ body {
 @import "quienes-somos";
 @import "proyectos";
 @import "main-lista";
-@import "ideas";
 @import "contactos";
-@import "footer";
 @import "media-querie";
 $colortitulo: rgb(37, 37, 37);
 $border: rgb(43, 0, 0);
