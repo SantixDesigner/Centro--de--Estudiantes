@@ -581,36 +581,32 @@ body {
   .gridPadreIndex {
     display: grid;
     grid-template-areas: "header" "nav" "main" "aside" "footer"; }
-  .header {
-    flex-direction: column; }
-    .header .headerImagenesTitulos .headerTitle .headerTitulo {
-      font-size: 35px; }
-    .header .headerImagenesTitulos .imagenesHeader {
-      display: none; }
-    .header .navSubHeader {
-      display: none; }
+  .header .headerImagenesTitulos .headerTitle .headerTitulo {
+    font-size: 35px; }
+  .header .headerImagenesTitulos .imagenesHeader {
+    display: none; }
+  .header .navSubHeader {
+    display: none; }
   .mainInicial {
     width: 100%; }
-    .mainInicial .sectionTotal {
-      flex-direction: column; }
-      .mainInicial .sectionTotal .sectionTitle {
-        width: 80%;
-        margin: auto; }
-      .mainInicial .sectionTotal .miembrosDelCentro {
-        display: grid;
-        grid-template-areas: "lista--superior" "lista--inferior" "consejeros"; }
-        .mainInicial .sectionTotal .miembrosDelCentro .listaInferior {
-          width: 90%; }
-        .mainInicial .sectionTotal .miembrosDelCentro .listaSuperior {
-          width: 90%; }
-        .mainInicial .sectionTotal .miembrosDelCentro .consejeros {
-          width: 90%; }
-      .mainInicial .sectionTotal .flexRap {
-        width: 95%; }
-        .mainInicial .sectionTotal .flexRap .consignasDelCentro {
+    .mainInicial .sectionTotal .sectionTitle {
+      width: 80%;
+      margin: auto; }
+    .mainInicial .sectionTotal .miembrosDelCentro {
+      display: grid;
+      grid-template-areas: "lista--superior" "lista--inferior" "consejeros"; }
+      .mainInicial .sectionTotal .miembrosDelCentro .listaInferior {
+        width: 90%; }
+      .mainInicial .sectionTotal .miembrosDelCentro .listaSuperior {
+        width: 90%; }
+      .mainInicial .sectionTotal .miembrosDelCentro .consejeros {
+        width: 90%; }
+    .mainInicial .sectionTotal .flexRap {
+      width: 95%; }
+      .mainInicial .sectionTotal .flexRap .consignasDelCentro {
+        width: 100%; }
+        .mainInicial .sectionTotal .flexRap .consignasDelCentro .olPrimeraSeccion {
           width: 100%; }
-          .mainInicial .sectionTotal .flexRap .consignasDelCentro .olPrimeraSeccion {
-            width: 100%; }
   .asideDelIndex img {
     margin: 5px 0px 5px 0px; } }
 
@@ -804,9 +800,6 @@ body {
     .formulario form div {
       width: 100%;
       font-size: 13px; }
-  .instagramContactos {
-    width: 90%;
-    margin-right: auto; }
   .bodyContactos {
     grid-template-areas: "header" "nav" "mainContactos" "footer"; } }
 
