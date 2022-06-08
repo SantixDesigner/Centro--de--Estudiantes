@@ -458,8 +458,6 @@ body {
   margin-left: auto;
   margin-right: auto; }
   .asideProyectos div {
-    display: flex;
-    flex-direction: column;
     background-color: #e79e00;
     max-width: 230px; }
     .asideProyectos div h3 {
