@@ -813,7 +813,7 @@ body {
 @media (max-width: 375px) {
   .formulario form div input {
     width: 100%;
-    font-size: 8px; } }
+    font-size: 13px; } }
 
 @media (min-width: 0) and (max-width: 1200px) {
   .gridPadreIndex {
